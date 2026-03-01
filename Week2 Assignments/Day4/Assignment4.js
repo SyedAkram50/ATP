@@ -1,3 +1,4 @@
+//Shallow Copy 
 const user = {
     id: 101,
     name: "Ravi",
