@@ -1,0 +1,8 @@
+//Exam portal simulator:
+console.log("Exam submitted successfully")
+
+//After 2 seconds → show: “Evaluating answers…”
+setTimeout(()=>{console.log("Evaluating answers...")},2000)
+
+//After 4 seconds → show: “Result: Pass”
+setTimeout(()=>{console.log("Result: Pass")},4000)
