@@ -190,7 +190,7 @@ Open `http://localhost:5173`
 - Frontend deployed to **Vercel**: `https://atp-24-eg-110-a17.vercel.app`
 - Backend CORS is configured to allow requests from the Vercel domain.
 ## Schema Design
-┌──────────────────┐
+                     ┌──────────────────┐
                      │       user       │
                      ├──────────────────┤
                      │ _id (ObjectId)   │◀┐
@@ -200,7 +200,7 @@ Open `http://localhost:5173`
                      │ password         │ │
                      │ role (Enum)      │ │
                      │ profileImageUrl  │ │
-                     │投 isUserActive   │ │
+                     │ isUserActive     │ │
                      └──────────────────┘ │
                                ▲          │
                                │          │
@@ -212,7 +212,7 @@ Open `http://localhost:5173`
 ├──────────────────┤            ├──────────────────┤
 │ _id (ObjectId)   │            │ _id (ObjectId)   │
 │ author ──────────┘            │ user ────────────┘
-│ title            │            │ comment          │
+│ comment          │            │ comment          │
 │ category         │            └──────────────────┘
 │ content          │                      ▲
 │ comments ───────────────────────────────┘
