@@ -207,14 +207,14 @@ Open `http://localhost:5173`
          ┌─────────────────────┘          │
          │ (author)                       │ (user)
          │                                │
-┌──────────────────┐            ┌──────────────────┐
-│     article      │            │  commentSchema   │
-├──────────────────┤            ├──────────────────┤
-│ _id (ObjectId)   │            │ _id (ObjectId)   │
-│ author ──────────┘            │ user ────────────┘
-│ comment          │            │ comment          │
-│ category         │            └──────────────────┘
-│ content          │                      ▲
-│ comments ───────────────────────────────┘
-│ isActive         │ (Embedded Array)
-└──────────────────┘
+    ┌──────────────────┐            ┌──────────────────┐
+    │     article      │            │  commentSchema   │
+    ├──────────────────┤            ├──────────────────┤
+    │ _id (ObjectId)   │            │ _id (ObjectId)   │
+    │ author ──────────┘            │ user ────────────┘
+    │ comment          │            │ comment          │
+    │ category         │            └──────────────────┘
+    │ content          │                      ▲
+    │ comments ───────────────────────────────┘
+    │ isActive         │ (Embedded Array)
+    └──────────────────┘
