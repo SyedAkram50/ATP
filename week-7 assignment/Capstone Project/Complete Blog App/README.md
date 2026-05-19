@@ -189,3 +189,18 @@ Open `http://localhost:5173`
 ## Deployment
 - Frontend deployed to **Vercel**: `https://atp-24-eg-110-a17.vercel.app`
 - Backend CORS is configured to allow requests from the Vercel domain.
+
+
++-----------------------------------+             +-----------------------------------+
+|            USERS (User)           |             |         ARTICLES (Article)        |
++-----------------------------------+             +-----------------------------------+
+| _id          : ObjectId  [PK]     |             | _id          : ObjectId  [PK]     |
+| username     : String    (Unique) |             | title        : String             |
+| email        : String    (Unique) | 1       1..*| content      : String             |
+| password     : String    (Hashed) |------------>| author       : ObjectId  [FK->User]|
+| role         : String    (Enum)   |             | category     : String             |
+| profilePic   : String    (URL)    |             | image        : String    (URL)    |
+| createdAt    : Date               |             | status       : String    (Enum)   |
+| updatedAt    : Date               |             | createdAt    : Date               |
++-----------------------------------+             | updatedAt    : Date               |
+                                                  +-----------------------------------+
